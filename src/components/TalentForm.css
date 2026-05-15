@@ -1,0 +1,95 @@
+/* Container to center the form on the screen */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffeef8 0%, #ffd1eb 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+/* The white card holding the form */
+.form-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.form-card h1 {
+  color: #d63384;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.form-card p {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 0.9rem;
+}
+
+/* Individual field spacing */
+.form-field {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #444;
+  font-size: 0.85rem;
+}
+
+/* Styling inputs, selects, and text areas */
+.form-field input,
+.form-field select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #f0f0f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box; /* Ensures padding doesn't break width */
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  outline: none;
+  border-color: #ff85c0;
+}
+
+/* Submit Button */
+.Submit-btn {
+  width: 100%;
+  background-color: #d63384;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+}
+
+.Submit-btn:hover {
+  background-color: #bc2b73;
+}
+
+.Submit-btn:active {
+  transform: scale(0.98);
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 480px) {
+  .form-card {
+    padding: 25px;
+  }
+}
