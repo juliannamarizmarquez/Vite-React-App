@@ -32,7 +32,7 @@ const TalentForm = () => {
 
     try {
       // REPLACE this URL with your actual Render Backend URL
-      const response = await fetch("https://expressnodeapp-r2p81.onrender.com/submit", {
+      const response = await fetch("https://expressnodeapp-bbvt.onrender.com/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
